@@ -4,12 +4,13 @@ package com.designer.fashion.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.core.widget.NestedScrollView;
+import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
+import androidx.viewpager2.widget.ViewPager2;
 import com.designer.fashion.R;
 import java.lang.NullPointerException;
 import java.lang.Override;
@@ -17,19 +18,32 @@ import java.lang.String;
 
 public final class FragmentHomeBinding implements ViewBinding {
   @NonNull
-  private final ConstraintLayout rootView;
+  private final NestedScrollView rootView;
 
   @NonNull
-  public final TextView textHome;
+  public final RecyclerView rcBottomA;
 
-  private FragmentHomeBinding(@NonNull ConstraintLayout rootView, @NonNull TextView textHome) {
+  @NonNull
+  public final RecyclerView rcBottomB;
+
+  @NonNull
+  public final RecyclerView rcTop;
+
+  @NonNull
+  public final ViewPager2 vpMiddle;
+
+  private FragmentHomeBinding(@NonNull NestedScrollView rootView, @NonNull RecyclerView rcBottomA,
+      @NonNull RecyclerView rcBottomB, @NonNull RecyclerView rcTop, @NonNull ViewPager2 vpMiddle) {
     this.rootView = rootView;
-    this.textHome = textHome;
+    this.rcBottomA = rcBottomA;
+    this.rcBottomB = rcBottomB;
+    this.rcTop = rcTop;
+    this.vpMiddle = vpMiddle;
   }
 
   @Override
   @NonNull
-  public ConstraintLayout getRoot() {
+  public NestedScrollView getRoot() {
     return rootView;
   }
 
@@ -54,13 +68,32 @@ public final class FragmentHomeBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.text_home;
-      TextView textHome = ViewBindings.findChildViewById(rootView, id);
-      if (textHome == null) {
+      id = R.id.rcBottomA;
+      RecyclerView rcBottomA = ViewBindings.findChildViewById(rootView, id);
+      if (rcBottomA == null) {
         break missingId;
       }
 
-      return new FragmentHomeBinding((ConstraintLayout) rootView, textHome);
+      id = R.id.rcBottomB;
+      RecyclerView rcBottomB = ViewBindings.findChildViewById(rootView, id);
+      if (rcBottomB == null) {
+        break missingId;
+      }
+
+      id = R.id.rcTop;
+      RecyclerView rcTop = ViewBindings.findChildViewById(rootView, id);
+      if (rcTop == null) {
+        break missingId;
+      }
+
+      id = R.id.vpMiddle;
+      ViewPager2 vpMiddle = ViewBindings.findChildViewById(rootView, id);
+      if (vpMiddle == null) {
+        break missingId;
+      }
+
+      return new FragmentHomeBinding((NestedScrollView) rootView, rcBottomA, rcBottomB, rcTop,
+          vpMiddle);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

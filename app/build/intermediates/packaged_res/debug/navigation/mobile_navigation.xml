@@ -12,14 +12,26 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="com.designer.fashion.ui.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
+        android:id="@+id/navigation_category"
+        android:name="com.designer.fashion.ui.category.CategoryFragment"
+        android:label="@string/title_category"
+        tools:layout="@layout/fragment_category" />
 
     <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="com.designer.fashion.ui.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        android:id="@+id/navigation_curate"
+        android:name="com.designer.fashion.ui.curate.CurateFragment"
+        android:label="@string/title_curate"
+        tools:layout="@layout/fragment_curate" />
+
+    <fragment
+        android:id="@+id/navigation_sale"
+        android:name="com.designer.fashion.ui.more.MoreFragment"
+        android:label="@string/title_sale"
+        tools:layout="@layout/fragment_category" />
+
+    <fragment
+        android:id="@+id/navigation_more"
+        android:name="com.designer.fashion.ui.more.MoreFragment"
+        android:label="@string/title_more"
+        tools:layout="@layout/fragment_curate" />
 </navigation>

@@ -1,6 +1,0 @@
-com.designer.fashion.test.app-annotation-experimental-1.3.0-0 C:\Users\Jenis\.gradle\caches\transforms-3\228863afcbb817ea985f101a96bc5f44\transformed\annotation-experimental-1.3.0\res
-com.designer.fashion.test.app-core-1.5.0-1 C:\Users\Jenis\.gradle\caches\transforms-3\71764765634c9f3de0b92de86ebba26a\transformed\core-1.5.0\res
-com.designer.fashion.test.app-androidTest-2 C:\Users\Jenis\AndroidStudioProjects\Jenis\app\build\generated\res\resValues\androidTest\debug
-com.designer.fashion.test.app-mergeDebugAndroidTestResources-3 C:\Users\Jenis\AndroidStudioProjects\Jenis\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
-com.designer.fashion.test.app-mergeDebugAndroidTestResources-4 C:\Users\Jenis\AndroidStudioProjects\Jenis\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
-com.designer.fashion.test.app-merged_res-5 C:\Users\Jenis\AndroidStudioProjects\Jenis\app\build\intermediates\merged_res\debugAndroidTest

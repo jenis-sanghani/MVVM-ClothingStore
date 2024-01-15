@@ -1,18 +1,42 @@
 [
     {
-        "merged": "com.designer.fashion.app-mergeDebugResources-54:/layout/fragment_dashboard.xml",
-        "source": "com.designer.fashion.app-main-57:/layout/fragment_dashboard.xml"
+        "merged": "C:\\Users\\Jenis\\.gradle\\daemon\\8.2\\com.designer.fashion.app-mergeDebugResources-57:\\layout\\fragment_home.xml",
+        "source": "C:\\Users\\Jenis\\.gradle\\daemon\\8.2\\com.designer.fashion.app-main-60:\\layout\\fragment_home.xml"
     },
     {
-        "merged": "com.designer.fashion.app-mergeDebugResources-54:/layout/activity_main.xml",
-        "source": "com.designer.fashion.app-main-57:/layout/activity_main.xml"
+        "merged": "C:\\Users\\Jenis\\.gradle\\daemon\\8.2\\com.designer.fashion.app-mergeDebugResources-57:\\layout\\toplayout.xml",
+        "source": "C:\\Users\\Jenis\\.gradle\\daemon\\8.2\\com.designer.fashion.app-main-60:\\layout\\toplayout.xml"
     },
     {
-        "merged": "com.designer.fashion.app-mergeDebugResources-54:/layout/fragment_home.xml",
-        "source": "com.designer.fashion.app-main-57:/layout/fragment_home.xml"
+        "merged": "com.designer.fashion.app-mergeDebugResources-57:/layout/bottomlayout.xml",
+        "source": "com.designer.fashion.app-main-60:/layout/bottomlayout.xml"
     },
     {
-        "merged": "com.designer.fashion.app-mergeDebugResources-54:/layout/fragment_notifications.xml",
-        "source": "com.designer.fashion.app-main-57:/layout/fragment_notifications.xml"
+        "merged": "C:\\Users\\Jenis\\.gradle\\daemon\\8.2\\com.designer.fashion.app-mergeDebugResources-57:\\layout\\fragment_curate.xml",
+        "source": "C:\\Users\\Jenis\\.gradle\\daemon\\8.2\\com.designer.fashion.app-main-60:\\layout\\fragment_curate.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jenis\\.gradle\\daemon\\8.2\\com.designer.fashion.app-mergeDebugResources-57:\\layout\\bottomlayout.xml",
+        "source": "C:\\Users\\Jenis\\.gradle\\daemon\\8.2\\com.designer.fashion.app-main-60:\\layout\\bottomlayout.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jenis\\.gradle\\daemon\\8.2\\com.designer.fashion.app-mergeDebugResources-57:\\layout\\middlelayout.xml",
+        "source": "C:\\Users\\Jenis\\.gradle\\daemon\\8.2\\com.designer.fashion.app-main-60:\\layout\\middlelayout.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jenis\\.gradle\\daemon\\8.2\\com.designer.fashion.app-mergeDebugResources-57:\\layout\\fragment_more.xml",
+        "source": "C:\\Users\\Jenis\\.gradle\\daemon\\8.2\\com.designer.fashion.app-main-60:\\layout\\fragment_more.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jenis\\.gradle\\daemon\\8.2\\com.designer.fashion.app-mergeDebugResources-57:\\layout\\fragment_sale.xml",
+        "source": "C:\\Users\\Jenis\\.gradle\\daemon\\8.2\\com.designer.fashion.app-main-60:\\layout\\fragment_sale.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jenis\\.gradle\\daemon\\8.2\\com.designer.fashion.app-mergeDebugResources-57:\\layout\\fragment_category.xml",
+        "source": "C:\\Users\\Jenis\\.gradle\\daemon\\8.2\\com.designer.fashion.app-main-60:\\layout\\fragment_category.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jenis\\.gradle\\daemon\\8.2\\com.designer.fashion.app-mergeDebugResources-57:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\Jenis\\.gradle\\daemon\\8.2\\com.designer.fashion.app-main-60:\\layout\\activity_main.xml"
     }
 ]

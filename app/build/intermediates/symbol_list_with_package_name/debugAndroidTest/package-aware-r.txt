@@ -1,3 +1,0 @@
-com.designer.fashion.test
-style WhiteBackgroundDialogTheme
-style WhiteBackgroundTheme

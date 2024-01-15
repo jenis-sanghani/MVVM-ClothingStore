@@ -1,0 +1,2 @@
+com.designer.fashion.test:style/WhiteBackgroundTheme = 0x7f010001
+com.designer.fashion.test:style/WhiteBackgroundDialogTheme = 0x7f010000

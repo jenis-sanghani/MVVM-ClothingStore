@@ -9,7 +9,7 @@ import com.designer.fashion.models.HomeData
 interface HomeDao {
 
     @Query("SELECT * from HomeData")
-    fun getHomeDao() : HomeData
+    fun getHomeDao() : HomeData?
 
     @Insert
     suspend fun insertHomeDao(homeData: HomeData)

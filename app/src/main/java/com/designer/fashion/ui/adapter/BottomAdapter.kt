@@ -4,6 +4,8 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.bumptech.glide.Priority
+import com.bumptech.glide.load.engine.DiskCacheStrategy
 import com.designer.fashion.databinding.BottomlayoutBinding
 import com.designer.fashion.models.RangeOfPattern
 
@@ -26,6 +28,8 @@ class BottomAdapter(
                     with(bottomDataA) {
                         Glide.with(bottomlayoutBinding.image.context)
                             .load(this[position].image)
+                            .priority(Priority.IMMEDIATE)
+                            .diskCacheStrategy(DiskCacheStrategy.ALL)
                             .into(bottomlayoutBinding.image)
 
                         bottomlayoutBinding.title.text = this[position].name

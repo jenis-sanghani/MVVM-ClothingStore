@@ -10,7 +10,7 @@ import com.designer.fashion.models.MiddleData
 interface MiddleDao {
 
     @Query("SELECT * from middleData")
-    fun getMiddleDataDao() : MiddleData
+    fun getMiddleDataDao() : MiddleData?
 
     @Insert
     suspend fun insertMiddleDataDao(middleData: MiddleData)

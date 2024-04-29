@@ -58,6 +58,7 @@ class HomeFragment : Fragment() {
                 compositePageTransformer.addTransformer { page, position ->
                     val r = 1 - abs(position)
                     page.scaleY = 0.90f + r * 0.10f
+//                    page.alpha = 0.8F
                 }
                 binding.vpMiddle.setPageTransformer(compositePageTransformer)
 

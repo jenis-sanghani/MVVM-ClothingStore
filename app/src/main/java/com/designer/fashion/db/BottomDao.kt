@@ -11,7 +11,7 @@ import com.designer.fashion.models.MiddleData
 interface BottomDao {
 
     @Query("SELECT * from bottomData")
-    fun getBottomDaoDao() : BottomData
+    fun getBottomDaoDao() : BottomData?
 
     @Insert
     suspend fun insertBottomDaoDao(middleData: BottomData)

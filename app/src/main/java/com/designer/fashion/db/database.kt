@@ -17,6 +17,7 @@ abstract class FashionDatabase : RoomDatabase() {
     abstract fun homeCategoriesDao() : HomeCategoriesDao
 
     companion object {
+        @Volatile
         private var INSTANCE : FashionDatabase? = null
         fun getDatabase(context: Context) : FashionDatabase {
             if (INSTANCE == null) {

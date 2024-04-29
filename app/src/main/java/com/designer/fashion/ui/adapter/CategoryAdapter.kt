@@ -40,7 +40,7 @@ class CategoryAdapter(private val homeData: ArrayList<Category>) : RecyclerView.
                             .apply(RequestOptions().transform(CenterCrop(), RoundedCorners(holder.topLayoutbinding.image.context.resources.getDimension(com.intuit.sdp.R.dimen._5sdp).toInt())))
                             .transition(DrawableTransitionOptions.withCrossFade())
                             .error(AppCompatResources.getDrawable(holder.topLayoutbinding.image.context, R.drawable.ic_dashboard_black_24dp))
-                            .diskCacheStrategy(DiskCacheStrategy.AUTOMATIC)
+                            .diskCacheStrategy(DiskCacheStrategy.ALL)
                             .into(holder.topLayoutbinding.image)
 
                         topLayoutbinding.tvDescription.text = this[position].category_name

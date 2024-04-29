@@ -5,6 +5,7 @@ import android.view.ViewGroup
 import androidx.appcompat.content.res.AppCompatResources
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.bumptech.glide.Priority
 import com.bumptech.glide.load.engine.DiskCacheStrategy
 import com.bumptech.glide.load.resource.bitmap.CenterCrop
 import com.bumptech.glide.load.resource.bitmap.RoundedCorners
@@ -24,18 +25,18 @@ class HomeAdapter(private val homeData: ArrayList<MainStickyMenu>?, private val 
         this.isAdapter = isAdapter
     }
 
-    internal class TopLayoutHolder(val topLayoutbinding: ToplayoutBinding) : RecyclerView.ViewHolder(topLayoutbinding.root)
-//    internal class MiddleLayoutHolder(val topLayoutbinding: ToplayoutBinding) : RecyclerView.ViewHolder(topLayoutbinding.root)
+    internal class TopLayoutHolder(val topLayoutBinding: ToplayoutBinding) : RecyclerView.ViewHolder(topLayoutBinding.root)
+//    internal class MiddleLayoutHolder(val topLayoutBinding: TopLayoutBinding) : RecyclerView.ViewHolder(topLayoutBinding.root)
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
         /*return when (isAdapter){
             1 -> {
-                val binding = ToplayoutBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+                val binding = TopLayoutBinding.inflate(LayoutInflater.from(parent.context), parent, false)
                 TopLayoutHolder(binding)
             }
 
             else -> {
-                val binding = MiddlelayoutBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+                val binding = MiddleLayoutBinding.inflate(LayoutInflater.from(parent.context), parent, false)
                 MiddleLayoutHolder(binding)
             }
         }*/
@@ -49,20 +50,21 @@ class HomeAdapter(private val homeData: ArrayList<MainStickyMenu>?, private val 
             is TopLayoutHolder -> {
                 with(holder) {
                     with(homeData) {
-                        Glide.with(topLayoutbinding.image.context)
+                        Glide.with(topLayoutBinding.image.context)
                             .load(this!![position].image)
+                            .priority(Priority.IMMEDIATE)
                             .centerCrop()
-                            .apply(RequestOptions().transform(CenterCrop(), RoundedCorners(holder.topLayoutbinding.image.context.resources.getDimension(com.intuit.sdp.R.dimen._5sdp).toInt())))
+                            .apply(RequestOptions().transform(CenterCrop(), RoundedCorners(holder.topLayoutBinding.image.context.resources.getDimension(com.intuit.sdp.R.dimen._5sdp).toInt())))
                             .transition(DrawableTransitionOptions.withCrossFade())
-                            .error(AppCompatResources.getDrawable(topLayoutbinding.image.context, R.drawable.ic_dashboard_black_24dp))
-                            .diskCacheStrategy(DiskCacheStrategy.AUTOMATIC)
-                            .into(topLayoutbinding.image)
+                            .error(AppCompatResources.getDrawable(topLayoutBinding.image.context, R.drawable.ic_dashboard_black_24dp))
+                            .diskCacheStrategy(DiskCacheStrategy.ALL)
+                            .into(topLayoutBinding.image)
 
-                        topLayoutbinding.tvDescription.text = this[position].title
+                        topLayoutBinding.tvDescription.text = this[position].title
 
-                        topLayoutbinding.image.isClickable = true
-                        topLayoutbinding.image.isFocusable = true
-                        topLayoutbinding.image.clickWithDebounce {
+                        topLayoutBinding.image.isClickable = true
+                        topLayoutBinding.image.isFocusable = true
+                        topLayoutBinding.image.clickWithDebounce {
                         }
                     }
                 }
@@ -70,19 +72,19 @@ class HomeAdapter(private val homeData: ArrayList<MainStickyMenu>?, private val 
             /*is MiddleLayoutHolder -> {
                 with(holder) {
                     with(middleData) {
-                        Glide.with(topLayoutbinding.image.context)
+                        Glide.with(topLayoutBinding.image.context)
                             .load(this!![position].image)
                             .centerCrop()
                             .apply(RequestOptions().transform(CenterCrop(), RoundedCorners(context.resources.getDimension(com.intuit.sdp.R.dimen._5sdp).toInt())))
                             .transition(DrawableTransitionOptions.withCrossFade())
                             .error(AppCompatResources.getDrawable(context, R.drawable.ic_dashboard_black_24dp))
                             .diskCacheStrategy(DiskCacheStrategy.AUTOMATIC)
-                            .into(holder.topLayoutbinding.image)
+                            .into(holder.topLayoutBinding.image)
 
-                        topLayoutbinding.tvDescription.text = this[position].name
+                        topLayoutBinding.tvDescription.text = this[position].name
 
-                        topLayoutbinding.image.isClickable = true
-                        topLayoutbinding.image.isFocusable = true
+                        topLayoutBinding.image.isClickable = true
+                        topLayoutBinding.image.isFocusable = true
                     }
                 }
             }*/

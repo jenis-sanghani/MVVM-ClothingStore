@@ -4,15 +4,12 @@ import android.content.Context
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import com.designer.fashion.db.FashionDatabase
-import com.designer.fashion.api.apiService
-import com.designer.fashion.models.BottomData
+import com.designer.fashion.api.ApiService
 import com.designer.fashion.models.HomeCategories
-import com.designer.fashion.models.HomeData
-import com.designer.fashion.models.MiddleData
-import com.designer.fashion.utils.NetworkUtils
+import com.designer.fashion.utils.NetworkUtils.Companion.isInternetAvailable
 
 class CategoryRepo(
-    private val apiService: apiService,
+    private val apiService: ApiService,
     private val database: FashionDatabase,
     private val applicationContext: Context
 ) {
@@ -22,10 +19,10 @@ class CategoryRepo(
         get() = homeCategoriesLiveData
 
     suspend fun getCategoryData() {
-        if (NetworkUtils.isInternetAvailable(applicationContext)) {
-            // HomeCategories
+        if (isInternetAvailable(applicationContext)) {
+            // HomeCategories  
             val responseCategories = apiService.getHomeCategoriesData()
-            if (responseCategories?.body() != null) {
+            if (responseCategories.body() != null) {
                 database.homeCategoriesDao().insertHomeCategoriesDao(responseCategories.body()!!)
                 homeCategoriesLiveData.postValue(responseCategories.body())
             }

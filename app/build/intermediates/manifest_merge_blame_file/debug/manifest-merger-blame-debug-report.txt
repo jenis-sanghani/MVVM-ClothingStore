@@ -51,16 +51,16 @@
 32        android:supportsRtl="true"
 32-->C:\Users\Jenis\AndroidStudioProjects\Projects\MVVMClothingStore\app\src\main\AndroidManifest.xml:16:9-35
 33        android:testOnly="true"
-34        android:theme="@style/Theme.Jenis" >
+34        android:theme="@style/Theme.Jenis"
 34-->C:\Users\Jenis\AndroidStudioProjects\Projects\MVVMClothingStore\app\src\main\AndroidManifest.xml:18:9-43
-35        <activity
-35-->C:\Users\Jenis\AndroidStudioProjects\Projects\MVVMClothingStore\app\src\main\AndroidManifest.xml:20:9-29:20
-36            android:name="com.designer.fashion.ui.MainActivity"
-36-->C:\Users\Jenis\AndroidStudioProjects\Projects\MVVMClothingStore\app\src\main\AndroidManifest.xml:21:13-44
-37            android:exported="true"
-37-->C:\Users\Jenis\AndroidStudioProjects\Projects\MVVMClothingStore\app\src\main\AndroidManifest.xml:22:13-36
-38            android:label="@string/app_name" >
-38-->C:\Users\Jenis\AndroidStudioProjects\Projects\MVVMClothingStore\app\src\main\AndroidManifest.xml:23:13-45
+35        android:usesCleartextTraffic="true" >
+35-->C:\Users\Jenis\AndroidStudioProjects\Projects\MVVMClothingStore\app\src\main\AndroidManifest.xml:19:9-44
+36        <activity
+36-->C:\Users\Jenis\AndroidStudioProjects\Projects\MVVMClothingStore\app\src\main\AndroidManifest.xml:21:9-29:20
+37            android:name="com.designer.fashion.ui.MainActivity"
+37-->C:\Users\Jenis\AndroidStudioProjects\Projects\MVVMClothingStore\app\src\main\AndroidManifest.xml:22:13-44
+38            android:exported="true" >
+38-->C:\Users\Jenis\AndroidStudioProjects\Projects\MVVMClothingStore\app\src\main\AndroidManifest.xml:23:13-36
 39            <intent-filter>
 39-->C:\Users\Jenis\AndroidStudioProjects\Projects\MVVMClothingStore\app\src\main\AndroidManifest.xml:24:13-28:29
 40                <action android:name="android.intent.action.MAIN" />

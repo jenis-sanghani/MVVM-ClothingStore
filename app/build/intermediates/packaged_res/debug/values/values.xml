@@ -16,7 +16,7 @@
     <string name="title_home">Home</string>
     <string name="title_more">More</string>
     <string name="title_sale">Sale</string>
-    <style name="Theme.Jenis" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+    <style name="Theme.Jenis" parent="Theme.Material3.DynamicColors.DayNight">
         
         <item name="colorPrimary">@color/purple_500</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>
